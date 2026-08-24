@@ -1,110 +1,104 @@
-```bibtex
-@article{larabel2025epycxeongraviton,
-  author  = {Michael Larabel},
-  title   = {AMD EPYC Turin vs. Intel Xeon 6 Granite Rapids vs. Graviton4 benchmarks with AWS m8 instances},
-  journal = {Phoronix},
-  year    = {2025},
-  month   = oct,
-  note    = {Accessed: 24 August 2026}
+@misc{chipsandcheese_graviton4,
+  author       = {Lam, Chester},
+  title        = {Arm's {Neoverse} {V2}, in {AWS}'s {Graviton}~4},
+  year         = {2024},
+  howpublished = {Chips and Cheese, \url{https://chipsandcheese.com/p/arms-neoverse-v2-in-awss-graviton-4}}
 }
 
-@book{sarangi2015computer,
-  author    = {Smruti R. Sarangi},
+@misc{amdepyc,
+  author       = {{Advanced Micro Devices}},
+  title        = {{AMD} {EPYC} 9005 Series Processor Architecture Overview},
+  year         = {2025},
+  number       = {58462},
+  note         = {Rev.\ 1.0, 23 Apr.\ 2025},
+  howpublished = {\url{https://www.amd.com/content/dam/amd/en/documents/epyc-technical-docs/user-guides/58462_amd-epyc-9005-tg-architecture-overview.pdf}}
+}
+
+@misc{hothardware_turin,
+  author       = {{HotHardware}},
+  title        = {{AMD} {EPYC} 9005 5th-Gen {Turin} {CPUs} Arrive With Up to 192 Cores},
+  year         = {2024},
+  howpublished = {\url{https://hothardware.com/news/amd-epyc-5th-gen-launch}}
+}
+
+@misc{intelxeon,
+  author       = {{Intel Corporation}},
+  title        = {{Intel} {Xeon} 6 Architecture --- Performance and Efficiency Cores},
+  year         = {2026},
+  note         = {Support article 000098612, last reviewed 24 Feb.\ 2026},
+  howpublished = {\url{https://www.intel.com/content/www/us/en/support/articles/000098612/processors/intel-xeon-processors.html}}
+}
+
+@misc{hothardware_xeon6,
+  author       = {{HotHardware}},
+  title        = {Intel Launches {Xeon} 6900{P}, 128 {P}-Core {Granite} {Rapids}},
+  year         = {2024},
+  howpublished = {\url{https://hothardware.com/reviews/intel-xeon-6-6900p-with-p-cores-launch}}
+}
+
+@misc{phoronix2022,
+  author       = {Larabel, Michael},
+  title        = {Amazon {Graviton3} vs.\ {Intel} {Xeon} vs.\ {AMD} {EPYC} Performance Review},
+  howpublished = {Phoronix},
+  year         = {2022},
+  url          = {https://www.phoronix.com/review/graviton3-amd-intel},
+  note         = {Same-cloud comparison of a1/c6g/c6a/c6i/c7g {EC2} instances (Graviton, Graviton2, {EPYC} Milan, Xeon Ice Lake, Graviton3); does \emph{not} directly cover Graviton4 / {EPYC} Turin / Xeon~6}
+}
+
+@misc{chipsandcheese_zen5,
+  author       = {{Chips and Cheese}},
+  title        = {Disabling {Zen}~5's Op Cache and Exploring Its Clustered Decoder},
+  year         = {2025},
+  howpublished = {\url{https://chipsandcheese.com/p/disabling-zen-5s-op-cache-and-exploring}}
+}
+
+@book{sarangi,
+  author    = {Sarangi, Smruti R.},
   title     = {Computer Organisation and Architecture},
   publisher = {McGraw Hill Education},
   year      = {2015},
-  note      = {Prescribed textbook. Available online at https://srsarangi.github.io/archbook/archbook.pdf}
+  note      = {Prescribed textbook. Online: \url{https://srsarangi.github.io/archbook/archbook.pdf}}
 }
 
-@inproceedings{velten2022memory,
-  author    = {Markus Velten and Robert Sch{\"o}ne and Thomas Ilsche and Daniel Hackenberg},
-  title     = {Memory performance of AMD EPYC Rome and Intel Cascade Lake SP server processors},
+@inproceedings{velten2022,
+  author    = {Velten, Markus and Sch{\"o}ne, Robert and Ilsche, Thomas and Hackenberg, Daniel},
+  title     = {Memory Performance of {AMD} {EPYC} {Rome} and {Intel} {Cascade} {Lake} {SP} Server Processors},
   booktitle = {Proceedings of the 2022 ACM/SPEC International Conference on Performance Engineering (ICPE)},
   year      = {2022},
+  doi       = {10.1145/3489525.3511689},
   note      = {Preprint: arXiv:2204.03290}
 }
 
-@misc{aws2026graviton,
+@misc{awsgravitonguide,
   author       = {{Amazon Web Services}},
-  title        = {AWS Graviton Getting Started and Technical Guide},
+  title        = {{AWS} {Graviton} Getting Started and Technical Guide},
   year         = {2026},
   howpublished = {\url{https://github.com/aws/aws-graviton-getting-started}},
   note         = {Accessed: 24 August 2026}
 }
 
-@techreport{amd2024epyc9005,
-  author      = {{Advanced Micro Devices}},
-  title       = {AMD EPYC 9005 Series Processor Architecture Overview},
-  institution = {Advanced Micro Devices},
-  year        = {2024},
-  number      = {58462},
-  note        = {Rev. 1.0}
-}
-
-@misc{intel2025xeon6,
-  author       = {{Intel Corporation}},
-  title        = {Intel Xeon 6 Processors: Architecture and Performance Documentation},
-  year         = {2025},
-  note         = {Accessed: 24 August 2026}
-}
-
-@misc{larabel2022gravitonepycxeon,
-  author       = {Michael Larabel},
-  title        = {Benchmarking Amazon Graviton against AMD EPYC and Intel Xeon},
-  journal      = {Phoronix},
-  year         = {2022},
-  note         = {Earlier-generation same-cloud benchmark; VERIFY exact article details before final submission}
-}
-
-@article{lawenda2025l3cache,
-  author  = {Marcin Lawenda and {\L}ukasz Szustak and L{\'a}szl{\'o} K{\"o}rnyei and Flavio Cesar Cunha Galeazzo and Pawe{\l} Bratek},
-  title   = {Evaluating the impact of the L3 cache size of AMD EPYC CPUs on the performance of CFD applications},
+@article{lawenda2025,
+  author  = {Lawenda, Marcin and Szustak, {\L}ukasz and K{\"o}rnyei, L{\'a}szl{\'o} and Galeazzo, Flavio Cesar Cunha and Bratek, Pawe{\l}},
+  title   = {Evaluating the Impact of the {L3} Cache Size of {AMD} {EPYC} {CPUs} on the Performance of {CFD} Applications},
   journal = {arXiv preprint arXiv:2505.17934},
-  year    = {2025}
+  year    = {2025},
+  doi     = {10.48550/arXiv.2505.17934},
+  url     = {https://arxiv.org/abs/2505.17934}
 }
 
-@article{hofmann2015execution,
-  author  = {Johannes Hofmann and Jan Eitzinger and Dietmar Fey},
+@article{hofmann2015,
+  author  = {Hofmann, Johannes and Eitzinger, Jan and Fey, Dietmar},
   title   = {Execution-Cache-Memory Performance Model: Introduction and Validation},
   journal = {arXiv preprint arXiv:1509.03118},
-  year    = {2015}
+  year    = {2015},
+  url     = {https://arxiv.org/abs/1509.03118}
 }
 
-@techreport{aws2021performancetesting,
-  author      = {{Amazon Web Services}},
-  title       = {AWS Graviton Performance Testing: Tips for Independent Software Vendors},
-  institution = {Amazon Web Services},
-  year        = {2021},
-  month       = sep,
-  note        = {AWS Whitepaper. Accessed: 24 August 2026}
+@misc{awsperftesting,
+  author       = {{Amazon Web Services}},
+  title        = {{AWS} {Graviton} Performance Testing: Tips for Independent Software Vendors},
+  year         = {2021},
+  month        = sep,
+  howpublished = {AWS Whitepaper, \url{https://docs.aws.amazon.com/whitepapers/latest/aws-graviton-performance-testing/aws-graviton-performance-testing.html}},
+  note         = {Accessed: 24 August 2026}
 }
-
-@misc{lam2024neoversev2,
-  author       = {Chester Lam},
-  title        = {Arm's Neoverse V2, in AWS's Graviton 4},
-  howpublished = {\url{https://chipsandcheese.com/p/arms-neoverse-v2-in-awss-graviton-4}},
-  year         = {2024}
-}
-
-@misc{hothardware2024epyc9005,
-  author       = {{HotHardware}},
-  title        = {AMD EPYC 9005 5th-Gen Turin CPUs Arrive with up to 192 Cores},
-  howpublished = {\url{https://hothardware.com/news/amd-epyc-5th-gen-launch}},
-  year         = {2024}
-}
-
-@misc{chipsandcheese2025zen5opcache,
-  author       = {{Chips and Cheese}},
-  title        = {Disabling Zen 5's Op Cache and Exploring Its Clustered Decoder},
-  howpublished = {\url{https://chipsandcheese.com/p/disabling-zen-5s-op-cache-and-exploring}},
-  year         = {2025}
-}
-
-@misc{hothardware2024xeon6900p,
-  author       = {{HotHardware}},
-  title        = {Intel Launches Xeon 6900P, 128 P-Core Granite Rapids},
-  howpublished = {\url{https://hothardware.com/reviews/intel-xeon-6-6900p-with-p-cores-launch}},
-  year         = {2024}
-}
-```
-
